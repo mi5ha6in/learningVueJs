@@ -3,12 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Learning Vue.js</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <script src="https://unpkg.com/vue"></script>
   <div id="app">
     <span @mouseover="changeText">Текст</span>
     <p>{{ title }}</p>
+    <p v-bind:class="styleCSS">Цвет: {{ styleCSS }}</p>
+    <input type="text" v-on:input="styleCSS = $event.target.value">
   </div>
 
   <script src="main.js"></script>

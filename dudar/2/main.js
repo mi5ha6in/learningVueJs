@@ -1,7 +1,8 @@
 new Vue ({
   el: '#app',
   data: {
-    title: "Hello World"
+    title: "Hello World",
+    styleCSS: ''
   },
   methods: {
     changeText () {
