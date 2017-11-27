@@ -7,7 +7,7 @@
 <body>
   <script src="https://unpkg.com/vue"></script>
   <div id="app">
-    <span v-on:click="title='Новый текст'">Текст</span>
+    <span @mouseover="changeText">Текст</span>
     <p>{{ title }}</p>
   </div>
 
