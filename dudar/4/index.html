@@ -10,7 +10,8 @@
 
   <div id="app">
     <button v-on:click="show = !show">Скрыть / Показать</button>
-    <p v-show="show">Текст, который может стать невидимым</p>
+    <p v-if="show">Сработал if</p>
+    <p v-else="show">Сработал else</p>
   </div>
 
   <script src="main.js"></script>
