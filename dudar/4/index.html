@@ -9,6 +9,7 @@
   <script src="https://unpkg.com/vue"></script>
 
   <div id="app">
+    <button v-on:click="show = !show">Скрыть / Показать</button>
     <p v-if="show">Текст, который может стать невидимым</p>
   </div>
 
