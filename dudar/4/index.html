@@ -12,6 +12,11 @@
     <button v-on:click="show = !show">Скрыть / Показать</button>
     <p v-if="show">Сработал if</p>
     <p v-else="show">Сработал else</p>
+
+    <ul>
+      <li v-for="car in cars">{{ car.model }}</li>
+    </ul>
+
   </div>
 
   <script src="main.js"></script>
