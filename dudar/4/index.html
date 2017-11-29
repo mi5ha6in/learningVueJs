@@ -14,7 +14,7 @@
     <p v-else="show">Сработал else</p>
 
     <ul>
-      <li v-for="car in cars">{{ car.model }}</li>
+      <li v-for="(car, index) in cars"> № {{index}}: {{ car.model }}, скорость {{car.speed}}</li>
     </ul>
 
   </div>
