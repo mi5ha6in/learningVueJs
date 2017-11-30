@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learning Vue.js</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="https://unpkg.com/vue"></script>
+
+  <div id="app">
+    <button v-on:click="show = !show">Скрыть / Показать</button>
+    <p v-if="show">Сработал if</p>
+    <p v-else>{{ showMess }}</p>
+
+    <ul>
+      <li v-for="(car, index) in cars"> № {{index + 1}}: {{ car.model }}, скорость {{car.speed}}</li>
+    </ul>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
