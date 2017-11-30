@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learning Vue.js</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="https://unpkg.com/vue"></script>
+
+  <div id="app">
+    <div class="car" v-for="car in cars">
+      <p>{{ car.model }}</p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
