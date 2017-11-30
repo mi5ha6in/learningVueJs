@@ -15,4 +15,10 @@ new Vue ({
       return this.message.toUpperCase ();
     }
   },
+  filters: {
+    lowercase (value) {
+      return value.toLowerCase ()
+    }
+  }
 });
+ 
