@@ -11,7 +11,7 @@
   <div id="app">
     <button v-on:click="show = !show">Скрыть / Показать</button>
     <p v-if="show">Сработал if</p>
-    <p v-else>{{ message | lowercase }}</p>
+    <p v-else>{{ message | lowercase | capatilize }}</p>
 
     <ul>
       <li v-for="(car, index) in cars"> № {{index + 1}}: {{ car.model }}, скорость {{car.speed}}</li>

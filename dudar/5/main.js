@@ -1,8 +1,14 @@
+Vue.filter ('capatilize', function (value) {
+  if (!value) return ''
+  value = value.toString()
+  return value.replace(/\b\w/g, function(l) { return l.toUpperCase() })
+});
+
 new Vue ({
   el: '#app',
   data: {
     show: true,
-    message: 'Hello',
+    message: 'Hello world, HELLO world',
     cars: [
       {model: "BMW", speed: 250},
       {model: "Audi", speed: 240},
@@ -21,4 +27,3 @@ new Vue ({
     }
   }
 });
- 
