@@ -1,13 +1,18 @@
 <template>
   <div>
-    <h1>Заголовок H1</h1>
-    <app-input></app-input>
+    <h1>{{message}}</h1>
+    <app-input :msg="message"></app-input>
   </div>
 </template>
 
 <script>
   import Input from './field.vue';
   export default {
+    data() {
+      return {
+        message: 'Заголовок'
+      }
+    },
     components: {
       'app-input': Input
     }
