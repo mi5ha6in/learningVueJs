@@ -1,4 +1,4 @@
-const POMODORO_STATE = {
+const POMODORO_STATES = {
   WORK : 'work',
   REST : 'reset'
 };
@@ -10,8 +10,14 @@ new Vue ({
   data: {
     minute: WORKING_TIME_LENGTH_IN_MINUTES,
     second: 0,
-    pomodoroState: POMODORO_STATE.WORK,
+    pomodoroState: POMODORO_STATES.WORK,
     timestamp: 0
+  },
+  computed: {
+    title: function () {
+      return this.pomodoroState === POMODORO_STATES.WORK ? 'Work!' :
+      'Rest!'
+    }
   },
   methods: {
     start: function () {
